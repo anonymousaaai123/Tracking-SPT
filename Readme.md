@@ -8,6 +8,10 @@ Thus, we propose a novel training approach called Shift-view Prompt Tuning, whic
   <img width="85%" src="fig/SPTrack.png" alt="SPTrack"/>
 </p>
 
+<p align="center">
+  <img width="85%" src="fig/SPT.png" alt="SPT"/>
+</p>
+
 # Usage
 ## Installation
 Create and activate a conda environment:
