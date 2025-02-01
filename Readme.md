@@ -10,7 +10,6 @@ We use sample pairs from different view datasets as prompts to guide the tracker
 This approach seamlessly transforms any constant-view trackers into shift-view trackers.
 Our extensive experiments on 14 datasets with 3 different view types show that our approach significantly enhances tracking performance.
 This advancement extends the application scope of current trackers and offers a robust solution for multi-view traffic monitoring and vehicle tracking in intelligent transportation systems.
-The code will be available at \href{https://github.com/anonymous-SPT}{here}.
 #  Methodology
 
 <p align="center">
