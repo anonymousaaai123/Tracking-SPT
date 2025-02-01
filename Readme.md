@@ -1,7 +1,16 @@
-# Shift-view Prompt Tuning: A Novel Training Pipeline for Visual Tracking
+# Adapting Visual Trackers to Dynamic View Transitions with Shift-view Prompt Tuning
 # Abstract
-Most SOTA visual trackers are constant-view trackers, $i.e.$,they are designed for tracking scenarios collected from fixed-view cameras. However, when they are applied to shift-view tracking scenarios, their effectiveness is limited, primarily due to the significant differences between the two scenarios, particularly in terms of target scale variations and environmental complexity variations. This limitation stems from the conventional offline training approaches, which solely collect constant-view data to train existing visual trackers, making them difficult to adapt for shift-view tracking scenarios. 
-Thus, we propose a novel training approach called Shift-view Prompt Tuning, which introduces shift-view prompts that adapt trackers to shift-view tracking scenarios in a cost-effective way. Our method consists of two components: the View Prompt Selector (VPS) and the Prompt Synthesizer (PS). The VPS generates powerful shift-view prompts from existing different view candidate datasets by leveraging invariant target semantic information across different view data. The PS synthesizes shift-view tokens using shift-view prompts, facilitating trackers’ adaptability for shift-view tracking scenarios. Extensive experiments on different tracking datasets demonstrate our proposed method’s effectiveness, efficiency, and strong generalization capabilities.
+Visual tracking is essential for intelligent transportation systems and autonomous driving.
+However, most conventional state-of-the-art visual trackers are designed for constant-view scenarios with fixed camera viewpoints, and they only achieve satisfactory performance under stable visual features scenarios.
+In reality, visual tracking often encounters shift-view scenarios, where cameras' dynamic view transitions between ground and aerial views. 
+These shifts lead to large variations in target scale and environmental complexity, resulting in inconsistent visual feature that ultimately degrade the robustness of conventional  visual trackers.
+Although developing a dedicated tracker for such shift-view scenarios is possible, it requires  expensive temporal and computational costs.
+To address this challenge, we propose Shift-view Prompt Tuning, a cost-efficient method that enables conventional trackers to handle dynamic view transitions.
+We use sample pairs from different view datasets as prompts to guide the tracker’s adaptation. By embedding distinctive visual information from these prompts into training samples, we help the tracker learn about dynamic view transitions without requiring it to be relearned from scratch. 
+This approach seamlessly transforms any constant-view trackers into shift-view trackers.
+Our extensive experiments on 14 datasets with 3 different view types show that our approach significantly enhances tracking performance.
+This advancement extends the application scope of current trackers and offers a robust solution for multi-view traffic monitoring and vehicle tracking in intelligent transportation systems.
+The code will be available at \href{https://github.com/anonymous-SPT}{here}.
 #  Methodology
 
 <p align="center">
